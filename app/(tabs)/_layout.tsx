@@ -40,6 +40,25 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
         }}
       />
+      <Tabs.Screen
+        name="game"
+        options={{
+          title: 'Game',
+          tabBarIcon: ({ color }) => (
+            <IconSymbol size={28} name="gamecontroller.fill" color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="session"
+        options={{
+          title: 'Session',
+          tabBarIcon: ({ color }) => (
+            // If your IconSymbol whitelist lacks this name, either add it or swap to a vector icon directly.
+            <IconSymbol size={28} name="person.2.fill" color={color} />
+          ),
+        }}
+      />
     </Tabs>
   );
 }
